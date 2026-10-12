@@ -4,49 +4,214 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
+  <meta name="theme-color" content="#0b1020">
+  <meta name="description" content="Goldi's personal portfolio showcasing web development skills and projects.">
+  <title>Goldi | Web Developer</title>
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-  <header>
-    <h2 class="logo">MyPortfolio</h2>
-    <nav>
+  <div class="background-glow glow-one"></div>
+  <div class="background-glow glow-two"></div>
+
+  <header class="navbar">
+    <a class="logo" href="#home">G<span>.</span></a>
+
+    <nav class="nav-links" id="navLinks">
       <a href="#home">Home</a>
+      <a href="#about">About</a>
       <a href="#skills">Skills</a>
       <a href="#projects">Projects</a>
     </nav>
+
+    <div class="nav-actions">
+      <button id="themeToggle" class="icon-btn" aria-label="Toggle light mode">
+        ☼
+      </button>
+      <a class="nav-cta" href="#contact">Let's Talk <span>↗</span></a>
+      <button id="menuToggle" class="icon-btn menu-btn"
+        aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    </div>
   </header>
 
-  <section id="home" class="hero">
-    <p class="tag">WELCOME TO MY WEBSITE</p>
-    <h1>Hi, I'm <span>Goldi</span></h1>
-    <h2>A Beginner Web Developer</h2>
-    <p>I am learning HTML, CSS and JavaScript to build amazing websites.</p>
-    <a href="#projects" class="btn">Explore My Projects</a>
-  </section>
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-content reveal">
+        <div class="availability">
+          <span class="status-dot"></span>
+          Available for learning opportunities
+        </div>
 
-  <section id="skills">
-    <h2>My Skills</h2>
-    <div class="skills">
-      <div>HTML</div>
-      <div>CSS</div>
-      <div>JavaScript</div>
-    </div>
-  </section>
+        <p class="eyebrow">HELLO, WORLD! I'M</p>
+        <h1>Goldi <span class="gradient-text">Gautam.</span></h1>
+        <h2>I build <span id="typingText">web experiences</span><span class="cursor">|</span></h2>
 
-  <section id="projects">
-    <h2>My Projects</h2>
-    <div class="project-card">
-      <h3>My First Portfolio</h3>
-      <p>A personal website made using HTML, CSS and JavaScript.</p>
-      <button id="learnBtn">Say Hello</button>
-    </div>
-  </section>
+        <p class="hero-description">
+          An aspiring web developer learning to turn creative ideas
+          into beautiful, interactive websites.
+        </p>
+
+        <div class="hero-buttons">
+          <a class="btn btn-primary" href="#projects">Explore my work <span>↗</span></a>
+          <a class="btn btn-secondary" href="#about">More about me</a>
+        </div>
+
+        <div class="social-links">
+          <a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+          <span class="social-divider">/</span>
+          <a href="#contact">Contact me ↗</a>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="profile-card">
+          <div class="card-top">
+            <span class="window-dot red"></span>
+            <span class="window-dot yellow"></span>
+            <span class="window-dot green"></span>
+            <span class="card-label">developer.js</span>
+          </div>
+          <div class="code-preview">
+            <p><span class="code-purple">const</span> developer = {</p>
+            <p class="indent">name: <span class="code-green">'Goldi'</span>,</p>
+            <p class="indent">role: <span class="code-green">'Web Developer'</span>,</p>
+            <p class="indent">skills: [</p>
+            <p class="indent2"><span class="code-orange">'HTML'</span>,</p>
+            <p class="indent2"><span class="code-orange">'CSS'</span>,</p>
+            <p class="indent2"><span class="code-orange">'JavaScript'</span></p>
+            <p class="indent">],</p>
+            <p class="indent">learning: <span class="code-green">'Every day'</span></p>
+            <p>};</p>
+            <p class="code-comment">// Building something great.</p>
+          </div>
+          <div class="card-footer">
+            <span class="status-dot"></span> Ready to create
+          </div>
+        </div>
+        <div class="floating-badge badge-html">HTML5</div>
+        <div class="floating-badge badge-js">JS ✦</div>
+        <div class="hero-decoration">✳</div>
+      </div>
+
+      <a class="scroll-indicator" href="#about">SCROLL TO EXPLORE <span>↓</span></a>
+    </section>
+
+    <section class="section about-section" id="about">
+      <div class="section-heading reveal">
+        <p class="eyebrow">A LITTLE ABOUT ME</p>
+        <h2>Curiosity turns into <span class="gradient-text">creation.</span></h2>
+      </div>
+      <div class="about-card reveal">
+        <div class="about-icon">⌘</div>
+        <div>
+          <h3>Learning by building</h3>
+          <p>
+            I'm at the beginning of my web development journey.
+            I enjoy learning how websites work, solving problems,
+            and creating projects that help me improve my skills.
+            My goal is to become a confident developer, one project at a time.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="section-heading reveal">
+        <p class="eyebrow">WHAT I'M LEARNING</p>
+        <h2>My current <span class="gradient-text">toolkit.</span></h2>
+        <p class="section-description">The building blocks of my development journey.</p>
+      </div>
+
+      <div class="skills-grid">
+        <article class="skill-card reveal">
+          <div class="skill-icon html-icon">5</div>
+          <h3>HTML5</h3>
+          <p>Creating structured and accessible web pages.</p>
+          <span class="skill-label">STRUCTURE</span>
+        </article>
+        <article class="skill-card reveal">
+          <div class="skill-icon css-icon">✳</div>
+          <h3>CSS3</h3>
+          <p>Designing layouts, animations and responsive interfaces.</p>
+          <span class="skill-label">DESIGN</span>
+        </article>
+        <article class="skill-card reveal">
+          <div class="skill-icon js-icon">JS</div>
+          <h3>JavaScript</h3>
+          <p>Adding logic and interactivity to websites.</p>
+          <span class="skill-label">INTERACTIVITY</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="section-heading reveal">
+        <p class="eyebrow">WHAT I'M BUILDING</p>
+        <h2>Featured <span class="gradient-text">projects.</span></h2>
+        <p class="section-description">Small projects today. Bigger ideas tomorrow.</p>
+      </div>
+
+      <div class="projects-grid">
+        <article class="project-card reveal">
+          <div class="project-preview preview-one">
+            <div class="mini-browser">
+              <div class="mini-dots">● ● ●</div>
+              <div class="mini-content">
+                <div class="mini-line"></div>
+                <div class="mini-line short"></div>
+                <div class="mini-button"></div>
+              </div>
+            </div>
+            <span class="preview-number">01</span>
+          </div>
+          <div class="project-info">
+            <div class="project-tags"><span>HTML</span><span>CSS</span></div>
+            <h3>Personal Portfolio</h3>
+            <p>A personal website to share my skills and developer journey.</p>
+            <a href="#home" class="project-link">You're viewing it <span>↗</span></a>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-preview preview-two">
+            <div class="calculator">
+              <div class="calc-screen">123 +</div>
+              <div class="calc-keys">
+                <span>7</span><span>8</span><span>9</span><span class="calc-accent">÷</span>
+                <span>4</span><span>5</span><span>6</span><span class="calc-accent">×</span>
+                <span>1</span><span>2</span><span>3</span><span class="calc-accent">=</span>
+              </div>
+            </div>
+            <span class="preview-number">02</span>
+          </div>
+          <div class="project-info">
+            <div class="project-tags"><span>HTML</span><span>JavaScript</span></div>
+            <h3>Mini Calculator</h3>
+            <p>A beginner project for practicing JavaScript logic and events.</p>
+            <span class="project-link coming-soon">Coming soon <span>✦</span></span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="contact-card reveal">
+        <p class="eyebrow">HAVE AN IDEA?</p>
+        <h2>Let's build something <span class="gradient-text">great.</span></h2>
+        <p>I'm learning, building and always open to connecting with fellow developers.</p>
+        <a class="btn btn-primary" href="https://github.com/" target="_blank"
+          rel="noopener noreferrer">Find me on GitHub ↗</a>
+      </div>
+    </section>
+  </main>
 
   <footer>
-    <p>Made with ❤️ by Goldi</p>
+    <a class="logo" href="#home">G<span>.</span></a>
+    <p>Designed & built by Goldi Gautam</p>
+    <a href="#home" class="back-top">Back to top ↑</a>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
+
