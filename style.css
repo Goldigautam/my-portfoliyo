@@ -1,0 +1,129 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #0f172a;
+  color: #f8fafc;
+  line-height: 1.6;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 8%;
+  background: #111c32;
+}
+
+.logo {
+  color: #38bdf8;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 18px;
+}
+
+nav a:hover {
+  color: #38bdf8;
+}
+
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.tag {
+  color: #38bdf8;
+  letter-spacing: 3px;
+  font-size: 12px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin: 12px 0;
+}
+
+.hero h1 span {
+  color: #38bdf8;
+}
+
+.hero h2 {
+  color: #cbd5e1;
+  margin-bottom: 12px;
+}
+
+.hero p {
+  margin-bottom: 24px;
+}
+
+.btn, button {
+  background: #38bdf8;
+  color: #0f172a;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+section:not(.hero) {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.skills {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.skills div, .project-card {
+  background: #1e293b;
+  padding: 22px;
+  border-radius: 12px;
+}
+
+.project-card {
+  max-width: 400px;
+  margin: 24px auto 0;
+}
+
+.project-card p {
+  margin: 12px 0 22px;
+}
+
+footer {
+  text-align: center;
+  padding: 25px;
+  background: #111c32;
+  color: #94a3b8;
+}
+
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  nav a {
+    margin: 0 6px;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+  }
+}
